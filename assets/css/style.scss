@@ -1,0 +1,42 @@
+*,body{
+    margin: 0;
+    padding: 0;
+    font-family:'Poppins';
+}
+
+// make variable
+:root{
+    --heading-color: rgb(255, 255, 255);
+
+} 
+#heading-h2{
+    font-size: 72px;
+    line-height: 80px;
+    color: var(--heading-color);
+}
+
+
+
+.hero-section{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,58,121,1) 35%, rgba(0,212,255,1) 100%);
+    
+
+    .hero-text{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+.second-section{
+    background-image: url('../images/video-bg.png');
+    min-height: 600px;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+
+    h2{
+        font-size: 52px;
+    }
+}
