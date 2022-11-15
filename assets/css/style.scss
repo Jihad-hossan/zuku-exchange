@@ -1,42 +1,99 @@
-*,body{
-    margin: 0;
+*{
     padding: 0;
-    font-family:'Poppins';
+}
+$border-color: #ccc;
+$white: #fff;
+
+// Header section styling start
+header {
+    .navbar{
+        .navbar-nav{
+            .nav-item{
+                .nav-link{
+                    font-size: 1.3rem;
+                    font-weight: 500;
+
+                    :active{
+                        color: rgb(6, 138, 143);
+                    }
+                }
+                
+            }
+        }
+    }
 }
 
-// make variable
-:root{
-    --heading-color: rgb(255, 255, 255);
-
-} 
-#heading-h2{
-    font-size: 72px;
-    line-height: 80px;
-    color: var(--heading-color);
-}
-
-
-
+// Hero section styling start
 .hero-section{
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,58,121,1) 35%, rgba(0,212,255,1) 100%);
-    
 
-    .hero-text{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
+    .hero-box{
+        background-color: rgba(158, 145, 145, 0.562);
+        border-radius: 10px;
+
+        .hero-text{
+            min-height: 45vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .hero-btn{
+                padding: 20px 60px;
+                font-size: 1.5rem;
+            }
+        }
     }
 }
 
-.second-section{
-    background-image: url('../images/video-bg.png');
-    min-height: 600px;
+.card{
     background-color: aliceblue;
-    display: flex;
-    align-items: center;
 
-    h2{
-        font-size: 52px;
+    .result{
+        border: 1px solid $border-color;
+        min-height: 40px;
+        border-radius: 8px;
+        background: $white;
     }
+
+    .card-body{
+        .result_currency{
+            display: flex;
+            align-items: center;
+
+            .iso{
+                margin-left: 10px;
+                text-transform: uppercase;
+                font-weight: 500;
+            }
+        }
+
+        .form-group{
+            .cm-phone-num{
+                padding: 10px 20px;
+                background-color: rgb(136, 186, 226);
+                display: inline-block;
+            }
+        }
+    }
+
+    .card-footer{
+        .msg-details{
+            text-transform: uppercase;
+        }
+    }
+}
+.live-coin-update{
+    margin-top: 80px;
+    margin-bottom: 120px;
+    .tradingview-widget-container{
+        iframe{
+            max-width: 1320px;
+        }
+
+        .tradingview-widget-copyright{
+            display: none;
+        }
+    }
+}
+#label-number{
+    font-size: 10px;
 }

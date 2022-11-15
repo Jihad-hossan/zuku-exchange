@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Multicurrency</title>
-    <!-- bootstrap css -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <!-- main style -->
-    <link rel="stylesheet" href="./assets/css/style.css.map"> 
-    <link rel="stylesheet" href="./assets/css/style.css"> 
+    <title>Currency Converter</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
 
+    <!-- Header section -->
     <header>
         <nav class="navbar navbar-expand-lg py-4 bg-light">
             <div class="container">
@@ -23,21 +22,13 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mx-auto mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="./buy-fiat.html">Buy Fiat</a>
                   </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./sell-cash.html">Sell Cash</a>
                   </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -48,57 +39,58 @@
             </div>
           </nav>
     </header>
-    
-    <section class="hero-section py-5">
+    <!-- Header section end -->
+
+    <!-- Hero section start -->
+    <div class="hero-section mt-5">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="hero-text my-auto">
-                        <h2 id="heading-h2">Bangladesh</h2>
-                        <p id="para">Get started with one of the easiest and most secure platforms for buying, selling, trading, and earning cryptocurrency in one place.</p>
-                        <div class="mt-5">
-                          <a href="#" class="btn btn-primary px-4">Buy Crypto</a>
-                          <a href="#" class="btn btn-primary px-4">Sell Crypto</a>
-                        </div>
+            <div class="row hero-box w-75 mx-auto">
+                <div class="col-md-6 my-auto">
+                    <div class="hero-left hero-text">
+                        <a href="./buy-fiat.html" class="btn btn-success hero-btn">Buy Fiat</a>
                     </div>
                 </div>
-                <div class="col md-6">
-                    <img class="img-fluid" src="./assets/images/promo-bg.png" alt="">
+                <div class="col-md-6 my-auto">
+                    <div class="hero-right hero-text">
+                        <a href="./sell-cash.html" class="btn btn-success hero-btn">Sell Cash</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+    <!-- Hero section end -->
 
-    <section class="second-section">
+    <!-- Live Coin update section start -->
+    <section class="live-coin-update">
       <div class="container">
         <div class="row">
-          <div class="col-md-6">
-            <h2>A banking platform that
-              enables developer solutions</h2>
-          </div>
-          <div class="col-md-6">
-            <form>
-              <div class="form-group mt-3">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-              </div>
-              <div class="form-group mt-3">
-                <label for="exampleInputPassword1">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-              </div>
-              <div class="form-check mt-3">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Check me out</label>
-              </div>
-              <button type="submit" class="btn btn-primary mt-3">Submit</button>
-            </form>
-          </div>
+          <!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/markets/cryptocurrencies/prices-all/" rel="noopener" target="_blank"><span class="blue-text">Cryptocurrency Markets</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-screener.js" async>
+          {
+          "width": 1320,
+          "height": 590,
+          "defaultColumn": "overview",
+          "screener_type": "crypto_mkt",
+          "displayCurrency": "USD",
+          "colorTheme": "light",
+          "locale": "en"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END -->
         </div>
       </div>
     </section>
+    <!-- Live Coin update section end -->
+
 
     <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="./assets/js/functions.js"></script>
+    <script src="./assets/js/app.js"></script>
 </body>
 </html>
