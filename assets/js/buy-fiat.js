@@ -128,6 +128,6 @@ currency_form.onsubmit = (event) => {
         iso.innerHTML = `${crypto.value}`;
 
         // total crypto
-        details.innerHTML =  `${ amount.value} ${ currency.value } = ${ totalResult.toFixed(2) } ${ crypto.value } `, 'success';
+        details.innerHTML =  `You will get = ${ totalResult.toFixed(2) } ${ crypto.value } `, 'success';
     }
 }

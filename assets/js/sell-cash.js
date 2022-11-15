@@ -29,25 +29,25 @@ currency_form.onsubmit = (event) => {
                     rate = 110.5;
                     break;
                 case 'cad' :
-                    rate = 0.75;
+                    rate = 1.33;
                     break;
                 case 'cny' :
-                    rate = 0.14;
+                    rate = 7.05;
                     break;
                 case 'eur' :
-                    rate = 1.03;
+                    rate = 0.97;
                     break;
                 case 'gbp' :
-                    rate = 1.18;
+                    rate = 0.85;
                     break;
                 case 'inr' :
-                    rate = 0.012;
+                    rate = 81.01;
                     break;
                 case 'jpy' :
-                    rate = 0.007;
+                    rate = 140.24;
                     break;
                 case 'rub' :
-                    rate = 0.017;
+                    rate = 61.10;
                     break;
                 case 'usd' :
                     rate = 1;
@@ -56,28 +56,28 @@ currency_form.onsubmit = (event) => {
         }else if(choose_cry == 'usdc'){
             switch(currency.value){
                 case 'bdt' :
-                    rate = 0.009;
+                    rate = 110.5;
                     break;
                 case 'cad' :
-                    rate = 0.75;
+                    rate = 1.33;
                     break;
                 case 'cny' :
-                    rate = 0.14;
+                    rate = 7.05;
                     break;
                 case 'eur' :
-                    rate = 1.03;
+                    rate = 0.97;
                     break;
                 case 'gbp' :
-                    rate = 1.18;
+                    rate = 0.85;
                     break;
                 case 'inr' :
-                    rate = 0.012;
+                    rate = 81.01;
                     break;
                 case 'jpy' :
-                    rate = 0.007;
+                    rate = 140.24;
                     break;
                 case 'rub' :
-                    rate = 0.017;
+                    rate = 61.10;
                     break;
                 case 'usd' :
                     rate = 1;
@@ -86,48 +86,43 @@ currency_form.onsubmit = (event) => {
         }else if(choose_cry == 'usdt'){
             switch(currency.value){
                 case 'bdt' :
-                    rate = 0.009049;
+                    rate = 110.5;
                     break;
                 case 'cad' :
-                    rate = 0.75;
+                    rate = 1.33;
                     break;
                 case 'cny' :
-                    rate = 0.14;
+                    rate = 7.05;
                     break;
                 case 'eur' :
-                    rate = 1.03;
+                    rate = 0.97;
                     break;
                 case 'gbp' :
-                    rate = 1.18;
+                    rate = 0.85;
                     break;
                 case 'inr' :
-                    rate = 0.012;
+                    rate = 81.01;
                     break;
                 case 'jpy' :
-                    rate = 0.007;
+                    rate = 140.24;
                     break;
                 case 'rub' :
-                    rate = 0.017;
+                    rate = 61.10;
                     break;
                 case 'usd' :
                     rate = 1;
                     break;
             }
         }
-        // result = amount.value / rate;
+        result = amount.value * rate;
+        c_result.innerHTML = `${result}`;
+        iso.innerHTML = currency.value;
+
 
         // define min fee
         let Min_Fee = 0.05;
         let Tax_Fee = 0.5;
-
-        let Tax_bad_die = amount.value / 100;
-        let Tax_bad_die_2 = Tax_bad_die * Tax_Fee;
-        let Min_fee_bad_die = Tax_bad_die_2 - Min_Fee;
-
-        let asol_result = amount.value - Min_fee_bad_die;
-
-        let main_result = asol_result * rate;
-
+        
         let result_with_tax = (amount.value / 100) * Tax_Fee;
         let result_afer_added_tax =  amount.value - result_with_tax;
         
@@ -137,6 +132,6 @@ currency_form.onsubmit = (event) => {
     
 
         // total crypto
-        details.innerHTML =  `${ amount.value} ${ crypto.value } = ${ final_result.toFixed(2) } ${ currency.value } `, 'success';
+        details.innerHTML =  `You will get = ${ final_result.toFixed(2) } ${ currency.value } `, 'success';
     }
 }
