@@ -1,29 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,600&display=swap");
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-body {
+  padding: 4rem 0;
+}
+.contact-body .contact-form {
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+
 * {
   padding: 0;
   font-size: 18px;
 }
 
+.h2_styling {
+  font-size: 3rem;
+  line-height: 3.7rem;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.para {
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5rem;
+}
+
+.button {
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0.5rem 1.5rem;
+  background: rgb(41, 157, 130);
+  color: #000;
+  border-radius: 4px;
+}
+
 header .navbar .navbar-nav .nav-item .nav-link {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: 500;
 }
 header .navbar .navbar-nav .nav-item .nav-link :active {
   color: rgb(6, 138, 143);
 }
 
-.hero-section .hero-box {
-  background-color: rgba(158, 145, 145, 0.562);
-  border-radius: 10px;
+.hero-section {
+  background: linear-gradient(#19334f, #19334f), linear-gradient(135deg, rgba(11, 111, 117, 0.5), rgba(11, 111, 117, 0.5) 0, rgba(11, 85, 117, 0.5));
+  padding: 100px 0;
 }
-.hero-section .hero-box .hero-text {
-  min-height: 45vh;
+.hero-section .hero-box .hero-text .hero-para {
+  color: #ccc;
+}
+.hero-section .hero-box .hero-right {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
-.hero-section .hero-box .hero-text .hero-btn {
-  padding: 20px 60px;
-  font-size: 1.5rem;
+.hero-section .hero-box .hero-right .hero-btn {
+  padding: 0.5rem 1.5rem;
 }
 
 .card {
@@ -49,7 +92,7 @@ header .navbar .navbar-nav .nav-item .nav-link :active {
   background-color: rgb(136, 186, 226);
   display: inline-block;
 }
-.card .card-footer .msg-details {
+.card .card-body .form-group .msg-details {
   text-transform: uppercase;
 }
 
@@ -64,6 +107,59 @@ header .navbar .navbar-nav .nav-item .nav-link :active {
   display: none;
 }
 
+.backlink {
+  display: none !important;
+}
+
 #label-number {
   font-size: 10px;
+}
+
+footer {
+  background: linear-gradient(#19334f, #19334f), linear-gradient(135deg, rgba(11, 111, 117, 0.5), rgba(11, 111, 117, 0.5) 0, rgba(11, 85, 117, 0.5));
+  padding: 60px 0;
+  color: #fff;
+}
+footer .footer-1st .social a {
+  text-decoration: none;
+  color: #ccc;
+  display: inline-block;
+}
+footer .footer-1st .social a:hover {
+  color: #fff;
+}
+footer .footer-1st .social a i {
+  font-size: 32px;
+}
+footer .footer-1st .social .discord {
+  margin-left: 15px;
+}
+footer .footer-2nd .q-links {
+  flex-direction: column;
+  justify-content: space-between;
+}
+footer .footer-2nd .q-links a {
+  text-decoration: none;
+  color: #ccc;
+  font-weight: 500;
+  position: relative;
+  margin-top: 15px;
+  display: inline-block;
+  padding-right: 4px;
+}
+footer .footer-2nd .q-links a::after {
+  content: "";
+  width: 0;
+  height: 1.5px;
+  background: linear-gradient(90deg, rgb(131, 58, 180) 0%, rgb(253, 29, 29) 50%, rgb(252, 176, 69) 100%);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: all 0.7s ease;
+}
+footer .footer-2nd .q-links a:hover {
+  color: #fff;
+}
+footer .footer-2nd .q-links a:hover::after {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */

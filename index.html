@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currency Converter</title>
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -13,9 +15,9 @@
 
     <!-- Header section -->
     <header>
-        <nav class="navbar navbar-expand-lg py-4 bg-light">
+        <nav class="navbar navbar-expand-lg py-2 bg-light">
             <div class="container">
-              <a class="navbar-brand" href="#">Navbar</a>
+              <a class="navbar-brand" href="#"><img class="img-fluid" width="60" height="50" src="./assets/images/WhatsApp Image 2022-11-17 at 10.58.31 PM.jpeg" alt=""></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -30,6 +32,9 @@
                   <li class="nav-item">
                     <a class="nav-link" href="./sell-cash.html">Sell Cash</a>
                   </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">Contact</a>
+                  </li>
                 </ul>
                 <form class="d-flex" role="search">
                   <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -42,17 +47,21 @@
     <!-- Header section end -->
 
     <!-- Hero section start -->
-    <div class="hero-section mt-5">
+    <div class="hero-section">
         <div class="container">
-            <div class="row hero-box w-75 mx-auto">
+            <div class="row hero-box mx-auto">
                 <div class="col-md-6 my-auto">
-                    <div class="hero-left hero-text">
-                        <a href="./buy-fiat.html" class="btn btn-success hero-btn">Buy Fiat</a>
+                    <div class="hero-left hero-text ">
+                      <h2 class="hero-heading h2_styling ">Buy or Sell your cash in the easiest way</h2>
+                      <p class="hero-para mt-3 .para">Sell Tether's USDT stablecoin from any wallet and withdraw funds in 14 fiat currencies directly on your bank account in 172 countries. No identification required.</p>
                     </div>
                 </div>
                 <div class="col-md-6 my-auto">
                     <div class="hero-right hero-text">
-                        <a href="./sell-cash.html" class="btn btn-success hero-btn">Sell Cash</a>
+                        <div>
+                          <a href="./buy-fiat.html" class="button hero-btn">Buy Fiat</a>
+                          <a href="./sell-cash.html" class="button hero-btn">Sell Cash</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -90,7 +99,48 @@
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="./assets/js/functions.js"></script>
     <script src="./assets/js/app.js"></script>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="footer-1st">
+              <a href="#"><img src="./assets/images/WhatsApp_Image_2022-11-17_at_10.58.31_PM-removebg-preview.png" width="70" height="50" alt=""></a>
+              <address class="mt-4">
+                Barlin<br>
+                Germany
+                </address>
+                <div class="social mt-4">
+                  <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                  <a href="https://discord.gg/5xVQpM5M" class="discord"><i class="fa-brands fa-discord"></i></a>
+                </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="footer-2nd">
+              <h3>Quick Links</h3>
+              <div class="q-links d-flex">
+                <div><a href="#">About Us</a></div>
+                <div><a href="#">Terms of Use</a></div>
+                <div><a href="#">Privacy Policy</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="footer-2nd">
+              <h3>Quick Links</h3>
+              <div class="q-links d-flex">
+                <div><a href="./contact.html">Contact Us</a></div>
+                <div><a href="#">Careers</a></div>
+                <div><a href="#">News</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 </body>
 </html>

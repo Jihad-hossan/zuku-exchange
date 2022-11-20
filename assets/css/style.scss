@@ -1,9 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,600&display=swap');
+@import './scss/contact';
+
 *{
     padding: 0;
     font-size: 18px;
 }
 $border-color: #ccc;
 $white: #fff;
+$black: #000;
+$gray: #ccc;
+.h2_styling{
+    font-size: 3rem;
+    line-height: 3.7rem;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    color: $white;
+    text-transform: capitalize;
+}
+.para{
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5rem;
+} 
+.button{
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    padding: .5rem 1.5rem;
+    background:  rgb(41, 157, 130);
+    color: $black;
+    border-radius: 4px;
+}
 
 // Header section styling start
 header {
@@ -11,7 +39,7 @@ header {
         .navbar-nav{
             .nav-item{
                 .nav-link{
-                    font-size: 1.3rem;
+                    font-size: 1.1rem;
                     font-weight: 500;
 
                     :active{
@@ -26,20 +54,23 @@ header {
 
 // Hero section styling start
 .hero-section{
+    background: linear-gradient(#19334f,#19334f),linear-gradient(135deg,rgba(11,111,117,.5),rgba(11,111,117,.5) 0,rgba(11,85,117,.5));
+    padding: 100px 0;
 
     .hero-box{
-        background-color: rgba(158, 145, 145, 0.562);
-        border-radius: 10px;
-
         .hero-text{
-            min-height: 45vh;
+            .hero-para{
+                color: $gray;
+            }
+        }
+        .hero-right{
             display: flex;
-            justify-content: center;
             align-items: center;
+            justify-content: center;
 
             .hero-btn{
-                padding: 20px 60px;
-                font-size: 1.5rem;
+
+                padding: .5rem 1.5rem;
             }
         }
     }
@@ -73,12 +104,9 @@ header {
                 background-color: rgb(136, 186, 226);
                 display: inline-block;
             }
-        }
-    }
-
-    .card-footer{
-        .msg-details{
-            text-transform: uppercase;
+            .msg-details{
+                text-transform: uppercase;
+            }
         }
     }
 }
@@ -95,6 +123,74 @@ header {
         }
     }
 }
+
+.backlink{
+    display: none !important;
+}
 #label-number{
     font-size: 10px;
+}
+
+// Footer styling
+footer{
+    background: linear-gradient(#19334f,#19334f),linear-gradient(135deg,rgba(11,111,117,.5),rgba(11,111,117,.5) 0,rgba(11,85,117,.5));
+    padding: 60px 0;
+
+    color: $white;
+
+    .footer-1st{
+        .social{
+            a{
+                text-decoration: none;
+                color: $gray;
+                display: inline-block;
+
+                &:hover{
+                    color: #fff;
+                }
+                i{
+                    font-size: 32px;
+                }
+            }
+            .discord{
+                margin-left: 15px;
+            }
+        }
+    }
+
+    .footer-2nd{
+        .q-links{
+            flex-direction: column;
+            justify-content: space-between;
+
+            a{
+                text-decoration: none;
+                color: $gray;
+                font-weight: 500;
+                position: relative;
+                margin-top: 15px;
+                display: inline-block;
+                padding-right: 4px;
+
+                &::after{
+                    content: '';
+                    width: 0;
+                    height: 1.5px;
+                    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    transition: all .7s ease;
+                }
+
+                &:hover{
+                    color: $white;
+                    &::after{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
 }
