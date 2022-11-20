@@ -8,6 +8,15 @@ body {
 .contact-body {
   padding: 4rem 0;
 }
+.contact-body .opinion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-body .opinion h2 {
+  color: #000;
+}
 .contact-body .contact-form {
   padding: 40px;
   border-radius: 10px;

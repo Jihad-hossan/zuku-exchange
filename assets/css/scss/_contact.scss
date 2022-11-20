@@ -3,8 +3,24 @@ body{
     margin: 0;
     padding: 0;
 }
+$border-color: #ccc;
+$white: #fff;
+$black: #000;
+$gray: #ccc;
+
 .contact-body{
     padding: 4rem 0;
+
+    .opinion{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h2{
+          color: $black;  
+        }
+    }
 
     .contact-form{
         padding: 40px;
