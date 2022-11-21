@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,600&display=swap');
 @import './scss/contact';
+@import './scss/about';
+@import './scss/privacy-policy';
+@import './scss/terms-of-use';
 
 *{
     padding: 0;
@@ -9,6 +12,7 @@ $border-color: #ccc;
 $white: #fff;
 $black: #000;
 $gray: #ccc;
+
 .h2_styling{
     font-size: 3rem;
     line-height: 3.7rem;
@@ -69,8 +73,13 @@ header {
             justify-content: center;
 
             .hero-btn{
-
                 padding: .5rem 1.5rem;
+                border: 1px solid transparent;
+                transition: all .8s ease;
+                &:hover{
+                    background: transparent;
+                    border: 1px solid;
+                }
             }
         }
     }
@@ -112,7 +121,7 @@ header {
 }
 .live-coin-update{
     margin-top: 80px;
-    margin-bottom: 120px;
+    margin-bottom: 60px;
     .tradingview-widget-container{
         iframe{
             max-width: 1320px;

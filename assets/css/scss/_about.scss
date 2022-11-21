@@ -1,0 +1,20 @@
+*{
+    padding: 0;
+    font-size: 18px;
+}
+$border-color: #ccc;
+$white: #fff;
+$black: #000;
+$gray: #ccc;
+
+.about-main{
+    padding: 120px 0;
+    background-image: url(../assets/images/WhatsApp_Image_2022-11-17_at_10.58.31_PM-removebg-preview.png);
+    background-size: cover;
+    .h2_styling{
+        color: $black;
+    }
+    .para{
+        text-align: justify;
+    }
+} 

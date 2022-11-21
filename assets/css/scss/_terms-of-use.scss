@@ -1,0 +1,17 @@
+*{
+    padding: 0;
+    font-size: 18px;
+}
+$border-color: #ccc;
+$white: #fff;
+$black: #000;
+$gray: #ccc;
+
+
+.terms-of-use{
+    padding: 120px 0;
+
+    .h2_styling{
+        color: $black;
+    }
+}
