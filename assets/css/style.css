@@ -1,4 +1,78 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,600&display=swap");
+* {
+  padding: 0;
+  font-size: 18px;
+}
+
+.card {
+  background-color: rgb(46, 148, 89);
+  color: #fff;
+}
+.card .result {
+  border: 1px solid #ccc;
+  min-height: 40px;
+  border-radius: 8px;
+  background: #fff;
+  color: #000;
+}
+.card .card-body .result_currency {
+  display: flex;
+  align-items: center;
+}
+.card .card-body .result_currency .iso {
+  margin-left: 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.card .card-body .form-group .cm-phone-num {
+  padding: 10px 20px;
+  background-color: rgb(136, 186, 226);
+  display: inline-block;
+}
+.card .card-body .form-group .msg-details {
+  text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+  .card .card-body .amount_crypto_currency {
+    flex-wrap: wrap;
+  }
+  .card .card-body .amount_crypto_currency .amount {
+    width: 50% !important;
+  }
+  .card .card-body .amount_crypto_currency .currencies {
+    width: 70% !important;
+    margin-top: 10px;
+  }
+  .card .card-body .amount_crypto_currency .crypto {
+    margin-top: 10px;
+    width: 70% !important;
+  }
+  .card .card-body .result_currency .result {
+    width: 50% !important;
+  }
+  .card .card-body .select-network-buy {
+    flex-direction: column;
+  }
+  .card .card-body .select-network {
+    flex-direction: column;
+  }
+  .card .card-body .select-network .form-check label {
+    font-size: 0.7rem;
+  }
+  .card .card-body .wallet-address {
+    width: 100% !important;
+  }
+  .card .card-body .mob-banking {
+    flex-direction: column;
+  }
+  .card .card-body .your-mob-number {
+    width: 60% !important;
+  }
+  .card .card-body .email {
+    width: 100% !important;
+  }
+}
 body {
   box-sizing: border-box;
   margin: 0;
@@ -23,6 +97,22 @@ body {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 }
 
+@media (max-width: 767px) {
+  .contact-body {
+    padding: 2rem 1rem;
+  }
+  .contact-body .opinion h2 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  .contact-body .opinion .para {
+    font-size: 1rem;
+  }
+  .contact-body .contact-form {
+    margin-top: 30px;
+    padding: 20px;
+  }
+}
 * {
   padding: 0;
   font-size: 18px;
@@ -52,6 +142,21 @@ body {
   color: #000;
 }
 
+@media (max-width: 767px) {
+  .main-section {
+    padding: 2rem 1rem;
+  }
+  .main-section .col-md-12 {
+    padding: 0;
+  }
+  .main-section .h2_styling {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  .main-section .para {
+    font-size: 1rem;
+  }
+}
 * {
   padding: 0;
   font-size: 18px;
@@ -64,6 +169,35 @@ body {
   color: #000;
 }
 
+@media (max-width: 767px) {
+  .terms-of-use {
+    padding: 2rem 1rem;
+  }
+  .terms-of-use .col-md-12 {
+    padding: 0;
+  }
+  .terms-of-use .h2_styling {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  .terms-of-use .para {
+    font-size: 1rem;
+  }
+}
+* {
+  padding: 0;
+  font-size: 18px;
+}
+
+@media (max-width: 767px) {
+  .news {
+    margin-top: 2rem !important;
+    margin-bottom: 2rem !important;
+  }
+  .news .col-md-12 {
+    padding: 0;
+  }
+}
 * {
   padding: 0;
   font-size: 18px;
@@ -95,12 +229,22 @@ body {
   border-radius: 4px;
 }
 
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 99999;
+  box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+}
 header .navbar .navbar-nav .nav-item .nav-link {
   font-size: 1.1rem;
   font-weight: 500;
 }
-header .navbar .navbar-nav .nav-item .nav-link :active {
-  color: rgb(6, 138, 143);
+header .navbar .navbar-nav .nav-item .nav-link:hover {
+  color: rgb(2, 42, 54);
+}
+header .navbar .navbar-nav .nav-item:active .nav-link {
+  color: red;
 }
 
 .hero-section {
@@ -125,33 +269,6 @@ header .navbar .navbar-nav .nav-item .nav-link :active {
   border: 1px solid;
 }
 
-.card {
-  background-color: aliceblue;
-}
-.card .result {
-  border: 1px solid #ccc;
-  min-height: 40px;
-  border-radius: 8px;
-  background: #fff;
-}
-.card .card-body .result_currency {
-  display: flex;
-  align-items: center;
-}
-.card .card-body .result_currency .iso {
-  margin-left: 10px;
-  text-transform: uppercase;
-  font-weight: 500;
-}
-.card .card-body .form-group .cm-phone-num {
-  padding: 10px 20px;
-  background-color: rgb(136, 186, 226);
-  display: inline-block;
-}
-.card .card-body .form-group .msg-details {
-  text-transform: uppercase;
-}
-
 .live-coin-update {
   margin-top: 80px;
   margin-bottom: 60px;
@@ -160,6 +277,10 @@ header .navbar .navbar-nav .nav-item .nav-link :active {
   max-width: 1320px;
 }
 .live-coin-update .tradingview-widget-container .tradingview-widget-copyright {
+  display: none;
+}
+
+.live_coin_mobile {
   display: none;
 }
 
@@ -218,4 +339,37 @@ footer .footer-2nd .q-links a:hover {
 }
 footer .footer-2nd .q-links a:hover::after {
   width: 100%;
+}
+
+@media (max-width: 767px) {
+  .col-md-6 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .hero-section {
+    padding: 60px 0;
+  }
+  .hero-section .hero-box .hero-text .h2_styling {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  .hero-section .hero-box .hero-right {
+    margin-top: 2rem;
+    justify-content: flex-start;
+  }
+  .live-coin-update {
+    display: none;
+  }
+  .live_coin_mobile {
+    display: block;
+  }
+  .live_coin_mobile .tradingview-widget-copyright {
+    display: none;
+  }
+  footer .footer-2nd {
+    margin-top: 30px;
+  }
+  footer .footer-2nd .q-links a {
+    margin-top: 10px;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -118,8 +118,8 @@ convert.onclick = (event) => {
         result = amount.value / rate;
 
         // define min fee
-        let Min_Fee = 0.05;
-        let Tax_Fee = 0.5;
+        let Min_Fee = 0.08;
+        let Tax_Fee = 1.5;
 
         let result_with_Min_Fee = result - Min_Fee;
         let result_with_tax = (result_with_Min_Fee / 100) * Tax_Fee;

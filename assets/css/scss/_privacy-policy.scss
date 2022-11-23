@@ -15,3 +15,22 @@ $gray: #ccc;
         color: $black;
     }
 }
+
+// Media query for 767px
+
+@media (max-width: 767px){
+    .main-section{
+        padding: 2rem 1rem;
+
+        .col-md-12{
+            padding: 0;
+        }
+            .h2_styling{
+              font-size: 2rem;
+              line-height: 2.5rem;
+            }
+            .para{
+                font-size: 1rem;
+            }
+    }
+}

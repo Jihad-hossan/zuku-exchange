@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,600&display=swap');
+@import './scss/buy-fiat';
 @import './scss/contact';
 @import './scss/about';
 @import './scss/privacy-policy';
-@import './scss/terms-of-use';
+@import './scss/terms-of-use'; 
+@import './scss/news';
 
 *{
     padding: 0;
@@ -39,6 +41,10 @@ $gray: #ccc;
 
 // Header section styling start
 header {
+    position: sticky;
+    top: 0;
+    z-index: 99999;
+    box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
     .navbar{
         .navbar-nav{
             .nav-item{
@@ -46,11 +52,15 @@ header {
                     font-size: 1.1rem;
                     font-weight: 500;
 
-                    :active{
-                        color: rgb(6, 138, 143);
+                    &:hover{
+                        color: rgb(2, 42, 54);
                     }
                 }
-                
+                &:active{
+                    .nav-link{
+                        color: red;
+                    }
+                }
             }
         }
     }
@@ -85,40 +95,7 @@ header {
     }
 }
 
-.card{
-    background-color: aliceblue;
-
-    .result{
-        border: 1px solid $border-color;
-        min-height: 40px;
-        border-radius: 8px;
-        background: $white;
-    }
-
-    .card-body{
-        .result_currency{
-            display: flex;
-            align-items: center;
-
-            .iso{
-                margin-left: 10px;
-                text-transform: uppercase;
-                font-weight: 500;
-            }
-        }
-
-        .form-group{
-            .cm-phone-num{
-                padding: 10px 20px;
-                background-color: rgb(136, 186, 226);
-                display: inline-block;
-            }
-            .msg-details{
-                text-transform: uppercase;
-            }
-        }
-    }
-}
+// Live coin update
 .live-coin-update{
     margin-top: 80px;
     margin-bottom: 60px;
@@ -132,6 +109,10 @@ header {
         }
     }
 }
+.live_coin_mobile{
+    display: none;
+}
+
 
 .backlink{
     display: none !important;
@@ -202,4 +183,52 @@ footer{
         }
     }
 
+}
+
+// ******* Media Query Start for mobile ********************
+
+@media (max-width: 767px){
+
+    .col-md-6{
+        padding-left: 0; 
+        padding-right: 0; 
+    }
+    .hero-section{
+        padding: 60px 0;
+        .hero-box{
+            .hero-text{
+                .h2_styling{
+                    font-size: 2rem;
+                    line-height: 2.5rem;
+                }
+            }
+            .hero-right{
+                margin-top: 2rem;
+                justify-content: flex-start;
+            }
+        }
+    }
+
+    .live-coin-update{
+        display: none;
+    }
+    .live_coin_mobile{
+        display: block;
+
+        .tradingview-widget-copyright{
+            display: none;
+        }
+    }
+
+    footer{
+        .footer-2nd{
+            margin-top: 30px;
+
+            .q-links{
+                a{
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
 }

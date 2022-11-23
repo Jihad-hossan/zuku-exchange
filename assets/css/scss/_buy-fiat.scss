@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    font-size: 18px;
+}
+$border-color: #ccc;
+$white: #fff;
+$black: #000;
+$gray: #ccc;
+
+.card{
+    background-color: rgb(46, 148, 89);
+    color: #fff;
+
+    .result{
+        border: 1px solid $border-color;
+        min-height: 40px;
+        border-radius: 8px;
+        background: $white;
+        color: $black;
+    }
+
+    .card-body{
+        .result_currency{
+            display: flex;
+            align-items: center;
+
+            .iso{
+                margin-left: 10px;
+                text-transform: uppercase;
+                font-weight: 500;
+            }
+        }
+
+        .form-group{
+            .cm-phone-num{
+                padding: 10px 20px;
+                background-color: rgb(136, 186, 226);
+                display: inline-block;
+            }
+            .msg-details{
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+// Media query for 767px
+
+@media (max-width: 767px){
+    .card{
+        .card-body{
+            .amount_crypto_currency{
+                flex-wrap: wrap;
+
+                .amount{
+                    width: 50% !important;
+                }
+                .currencies{
+                    width: 70% !important;
+                    margin-top: 10px;
+                }
+                .crypto{
+                    margin-top: 10px;
+                    width: 70% !important;
+                }
+            }
+            .result_currency{
+                .result{
+                    width: 50%!important;
+                }
+            }
+            .select-network-buy{
+                flex-direction: column;
+            }
+            .select-network{
+                flex-direction: column;
+
+                .form-check{
+                    label{
+                        font-size: .7rem;
+                    }
+                }
+            }
+            .wallet-address{
+                width: 100% !important;
+            }
+            .mob-banking{
+                flex-direction: column;
+            }
+            .your-mob-number{
+                width: 60% !important;
+            }
+            .email{
+                width: 100% !important;
+            }
+        }
+    }
+}

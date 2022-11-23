@@ -1,0 +1,18 @@
+*{
+    padding: 0;
+    font-size: 18px;
+}
+$border-color: #ccc;
+$white: #fff;
+$black: #000;
+$gray: #ccc;
+
+@media(max-width: 767px){
+    .news{
+        margin-top: 2rem !important; 
+        margin-bottom: 2rem !important; 
+        .col-md-12{
+            padding: 0;
+        }
+    }
+}
