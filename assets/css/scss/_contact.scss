@@ -18,13 +18,18 @@ $gray: #ccc;
         align-items: center;
 
         h2{
-          color: $black;  
+          color: $white;
+          margin-bottom: 30px;  
+        }
+        p{
+            color: $white;
         }
     }
 
     .contact-form{
         padding: 40px;
         border-radius: 10px;
+        background: $gray;
         box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
     }
 }

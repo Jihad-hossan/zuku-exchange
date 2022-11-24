@@ -12,9 +12,29 @@ $gray: #ccc;
     background-image: url(../assets/images/WhatsApp_Image_2022-11-17_at_10.58.31_PM-removebg-preview.png);
     background-size: cover;
     .h2_styling{
-        color: $black;
+        color: $white;
     }
     .para{
         text-align: justify;
+        color: $white;
     }
 } 
+
+// Media query for 767px
+
+@media (max-width: 767px){
+    .about-main{
+        padding: 2rem 1rem;
+
+        .col-md-12{
+            padding: 0;
+        }
+            .h2_styling{
+              font-size: 2rem;
+              line-height: 2.5rem;
+            }
+            .para{
+                font-size: 1rem;
+            }
+    }
+}

@@ -25,7 +25,7 @@ convert.onclick = (event) => {
         if( choose_cry == 'busd' ){
             switch(currency.value){
                 case 'bdt' :
-                    rate = 110.5;
+                    rate = 114;
                     break;
                 case 'cad' :
                     rate = 1.33;
@@ -55,7 +55,7 @@ convert.onclick = (event) => {
         }else if(choose_cry == 'usdc'){
             switch(currency.value){
                 case 'bdt' :
-                    rate = 110.5;
+                    rate = 114;
                     break;
                 case 'cad' :
                     rate = 1.33;
@@ -85,7 +85,7 @@ convert.onclick = (event) => {
         }else if(choose_cry == 'usdt'){
             switch(currency.value){
                 case 'bdt' :
-                    rate = 110.5;
+                    rate = 114;
                     break;
                 case 'cad' :
                     rate = 1.33;
@@ -120,7 +120,7 @@ convert.onclick = (event) => {
 
         // define min fee
         let Min_Fee = 0.08;
-        let Tax_Fee = 1.5;
+        let Tax_Fee = '';
         
         let result_with_tax = (amount.value / 100) * Tax_Fee;
         let result_afer_added_tax =  amount.value - result_with_tax;

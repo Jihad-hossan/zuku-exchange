@@ -8,7 +8,7 @@ $black: #000;
 $gray: #ccc;
 
 .card{
-    background-color: rgb(46, 148, 89);
+    background: rgb(6, 17, 33);
     color: #fff;
 
     .result{
@@ -20,6 +20,7 @@ $gray: #ccc;
     }
 
     .card-body{
+        padding-bottom: 0;
         .result_currency{
             display: flex;
             align-items: center;
@@ -40,6 +41,12 @@ $gray: #ccc;
             .msg-details{
                 text-transform: uppercase;
             }
+        }
+    }
+
+    .card-footer{
+        .small{
+            font-size: 14px;
         }
     }
 }
