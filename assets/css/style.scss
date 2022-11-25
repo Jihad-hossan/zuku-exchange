@@ -5,6 +5,7 @@
 @import './scss/privacy-policy';
 @import './scss/terms-of-use'; 
 @import './scss/news';
+@import './scss/careers';
 
 *{
     padding: 0;
@@ -224,8 +225,19 @@ footer{
     }
 
     .navbar{
+        .navbar-collapse{
+            .navbar-nav{
+                padding: 10px 0;
+                .nav-item{
+                    .nav-link{
+                        padding: 8px 0;
+                    }
+                }
+            }
+        }
         .navbar-toggler{
             border: 1px solid transparent;
+            background: #ccc;
             &:focus{
                 border: 1px solid #19334f;
                 box-shadow: none;

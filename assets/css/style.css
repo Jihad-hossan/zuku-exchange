@@ -238,6 +238,34 @@ body {
   font-size: 18px;
 }
 
+.careers-main {
+  padding: 120px 0;
+}
+.careers-main .h2_styling {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+  .careers-main {
+    padding: 2rem 1rem;
+  }
+  .careers-main .col-md-12 {
+    padding: 0;
+  }
+  .careers-main .h2_styling {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  .careers-main .para {
+    font-size: 1rem;
+  }
+}
+* {
+  padding: 0;
+  font-size: 18px;
+}
+
 body {
   background: linear-gradient(#19334f, #19334f), linear-gradient(135deg, rgba(11, 111, 117, 0.5), rgba(11, 111, 117, 0.5) 0, rgba(11, 85, 117, 0.5));
 }
@@ -412,8 +440,15 @@ footer .container .footer-2nd .q-links a:hover::after {
     padding-left: 0;
     padding-right: 0;
   }
+  .navbar .navbar-collapse .navbar-nav {
+    padding: 10px 0;
+  }
+  .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+    padding: 8px 0;
+  }
   .navbar .navbar-toggler {
     border: 1px solid transparent;
+    background: #ccc;
   }
   .navbar .navbar-toggler:focus {
     border: 1px solid #19334f;
