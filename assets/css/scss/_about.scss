@@ -18,6 +18,10 @@ $gray: #ccc;
         text-align: justify;
         color: $white;
     }
+    .right-img{
+        display: flex;
+        justify-content: center;
+    }
 } 
 
 // Media query for 767px

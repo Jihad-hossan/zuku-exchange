@@ -93,13 +93,16 @@ header {
 
 // Hero section styling start
 .hero-section{
-    background: linear-gradient(#19334f,#19334f),linear-gradient(135deg,rgba(11,111,117,.5),rgba(11,111,117,.5) 0,rgba(11,85,117,.5));
     padding: 100px 0;
 
     .hero-box{
+        background: url(../images/bg-img-1-1.svg);
+        background-repeat: no-repeat;
+        background-position: 100% 100%;
         .hero-text{
             .hero-para{
                 color: $gray;
+                margin-bottom: 0;
             }
         }
         .hero-right{
@@ -248,6 +251,7 @@ footer{
     .hero-section{
         padding: 60px 0;
         .hero-box{
+            background-size: 0;
             .hero-text{
                 .h2_styling{
                     font-size: 2rem;

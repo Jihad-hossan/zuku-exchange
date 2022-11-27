@@ -4,78 +4,84 @@
   font-size: 18px;
 }
 
-.card {
+.buy-sell {
+  padding: 120px 0;
+}
+.buy-sell .card {
   background: rgb(6, 17, 33);
   color: #fff;
 }
-.card .result {
+.buy-sell .card .result {
   border: 1px solid #ccc;
   min-height: 40px;
   border-radius: 8px;
   background: #fff;
   color: #000;
 }
-.card .card-body {
+.buy-sell .card .card-body {
   padding-bottom: 0;
 }
-.card .card-body .result_currency {
+.buy-sell .card .card-body .result_currency {
   display: flex;
   align-items: center;
 }
-.card .card-body .result_currency .iso {
+.buy-sell .card .card-body .result_currency .iso {
   margin-left: 10px;
   text-transform: uppercase;
   font-weight: 500;
 }
-.card .card-body .form-group .cm-phone-num {
+.buy-sell .card .card-body .form-group .cm-phone-num {
   padding: 10px 20px;
   background-color: rgb(136, 186, 226);
   display: inline-block;
 }
-.card .card-body .form-group .msg-details {
+.buy-sell .card .card-body .form-group .msg-details {
   text-transform: uppercase;
 }
-.card .card-footer .small {
+.buy-sell .card .card-footer .small {
   font-size: 14px;
 }
 
 @media (max-width: 767px) {
-  .card .card-body .amount_crypto_currency {
+  .buy-sell {
+    padding: 60px 10px;
+  }
+  .buy-sell .card .card-body .amount_crypto_currency {
     flex-wrap: wrap;
   }
-  .card .card-body .amount_crypto_currency .amount {
+  .buy-sell .card .card-body .amount_crypto_currency .amount {
     width: 50% !important;
   }
-  .card .card-body .amount_crypto_currency .currencies {
+  .buy-sell .card .card-body .amount_crypto_currency .currencies {
     width: 70% !important;
     margin-top: 10px;
   }
-  .card .card-body .amount_crypto_currency .crypto {
+  .buy-sell .card .card-body .amount_crypto_currency .crypto {
     margin-top: 10px;
     width: 70% !important;
   }
-  .card .card-body .result_currency .result {
+  .buy-sell .card .card-body .result_currency .result {
     width: 50% !important;
   }
-  .card .card-body .select-network-buy {
+  .buy-sell .card .card-body .select-network-buy {
     flex-direction: column;
   }
-  .card .card-body .select-network {
+  .buy-sell .card .card-body .select-network {
     flex-direction: column;
   }
-  .card .card-body .select-network .form-check label {
+  .buy-sell .card .card-body .select-network .form-check label {
     font-size: 0.7rem;
   }
-  .card .card-body .wallet-address {
+  .buy-sell .card .card-body .wallet-address {
     width: 100% !important;
   }
-  .card .card-body .mob-banking {
+  .buy-sell .card .card-body .mob-banking {
     flex-direction: column;
   }
-  .card .card-body .your-mob-number {
+  .buy-sell .card .card-body .your-mob-number {
     width: 60% !important;
   }
-  .card .card-body .email {
+  .buy-sell .card .card-body .email {
     width: 100% !important;
   }
 }
@@ -140,6 +146,10 @@ body {
 .about-main .para {
   text-align: justify;
   color: #fff;
+}
+.about-main .right-img {
+  display: flex;
+  justify-content: center;
 }
 
 @media (max-width: 767px) {
@@ -338,11 +348,16 @@ header .navbar .navbar-nav .nav-item .nav-link:hover::after {
 }
 
 .hero-section {
-  background: linear-gradient(#19334f, #19334f), linear-gradient(135deg, rgba(11, 111, 117, 0.5), rgba(11, 111, 117, 0.5) 0, rgba(11, 85, 117, 0.5));
   padding: 100px 0;
+}
+.hero-section .hero-box {
+  background: url(../images/bg-img-1-1.svg);
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
 }
 .hero-section .hero-box .hero-text .hero-para {
   color: #ccc;
+  margin-bottom: 0;
 }
 .hero-section .hero-box .hero-right {
   display: flex;
@@ -456,6 +471,9 @@ footer .container .footer-2nd .q-links a:hover::after {
   }
   .hero-section {
     padding: 60px 0;
+  }
+  .hero-section .hero-box {
+    background-size: 0;
   }
   .hero-section .hero-box .hero-text .h2_styling {
     font-size: 2rem;
